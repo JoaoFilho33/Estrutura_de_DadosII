@@ -14,14 +14,14 @@ void MorrisPreorder(){
         }
         else{
             tmp = p->left;  
-            while (tmp->right!=0 && tmp->right!=p) // encontra o nó mais a direita da subarvore esqueda do nó atual p
+            while (tmp->right!=0 && tmp->right!=p) // encontra o nó mais a direita da subarvore esquerda do nó atual p
                 tmp=tmp->right; 
                 if (tmp->right==0){ // se esse ponteiro right for nulo 
                     visit(p); // visit o nó
                     tmp->right=p; // o ponteiro right aponta para o nó atual p
                     p=p->left;
                 }
-                else{   // se o ponteiro right ja aponte para o nó atual p   
+                else{   // se o ponteiro right ja aponta para o nó atual p   
                     tmp->right=0; //é configurado como nulo
                     p=p->right; //e o ponteiro p é movido para o filho direito 
                 } /*fim else*/  }
