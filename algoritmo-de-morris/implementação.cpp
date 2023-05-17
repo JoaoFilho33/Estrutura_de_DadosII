@@ -94,3 +94,9 @@ int main() {
     MorrisInorder(root);
     cout << endl;
 }
+
+/*
+saída:
+Percurso pré-ordem: 1 2 4 5 3 6 
+Percurso in-ordem: 4 2 5 1 6 3 
+*/
