@@ -18,14 +18,14 @@ B) Explique quais os passos realizados pelo algoritmo de Morris – Percurso inO
 		.Se não, 
 			"visit(p)", faz o que for necessário e vá para p->dir;
 		.Se sim, 
-			encontre o nó mais à direita na subárvore esquerda do nó "p"(nó 			predecessor);
+			encontre o nó mais à direita na subárvore esquerda do nó "p"(nó predecessor);
 			
 			.Verifique se "predecessor" possui ponteiro direito já definido;
 			.Se não, 
 				faça apontar para nó "p" a aponte para o nó esq, p->esq;
 			.Se sim,
 				os nós da subarvore esquerda ja foram visitados, em seguida
-				"visit(p)" e faz o que for necessário; remova o ponteiro 					direito do predecessor, e o anule. Em seguida atualize o 					ponteiro "p" para p->dir;
+				"visit(p)" e faz o que for necessário; remova o ponteiro  direito do predecessor, e o anule. Em seguida atualize o 	ponteiro "p" para p->dir;
 				
 C) Aplique a árvore no algoritmo e confira se o resultado está correto.
 -
