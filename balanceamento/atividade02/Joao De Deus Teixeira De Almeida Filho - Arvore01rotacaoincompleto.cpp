@@ -225,3 +225,10 @@ int main()
 
 	delete a;
 }
+
+/*
+Altura: 3
+Árvore resultante: 50 30 20 40 70 60 77 
+Balanceada.
+Árvore após as rotações: 30 20 40 50 60 70 77 
+*/
