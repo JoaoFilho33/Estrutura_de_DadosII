@@ -216,7 +216,7 @@ int main()
 	else
 		cout << "Não está balanceada." << endl;
 
-	// 1.4) Implementação da primeira parte do algoritmo DWS
+	// 1.4) Primeira parte do algoritmo DWS
 	a->backbone(a->getRoot());
 
 	cout << "Árvore após as rotações: ";
@@ -224,6 +224,4 @@ int main()
 	cout << endl;
 
 	delete a;
-
-	return 0;
 }
