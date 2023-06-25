@@ -1,3 +1,10 @@
+/*
+INTEGRANTES:
+João de Deus
+Kairon Willyan
+Maria Vitória
+*/
+
 #include <iostream>
 #include <list>
 #include <queue>
