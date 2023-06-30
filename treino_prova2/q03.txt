@@ -1,0 +1,27 @@
+Uma Árvore AVL é uma árvore binária de busca balanceada, onde a altura das subárvores 
+esquerda e direita de cada nó difere no máximo em 1.
+
+Características de uma Árvore AVL:
+
+Para cada nó da árvore, a diferença entre a altura da subárvore esquerda e a altura da subárvore direita é no máximo 1. 
+Essa diferença é chamada de fator de balanceamento.
+A árvore AVL é uma árvore binária de busca, o que significa que para cada nó, todos os valores à esquerda são menores 
+que o valor do nó e todos os valores à direita são maiores.
+As inserções e remoções em uma árvore AVL podem exigir rotações para reequilibrar a árvore e manter as 
+propriedades de balanceamento.
+
+ex:
+        10
+       /  \
+      5   15
+     / \    \
+    3   7    20
+
+3 = 0
+7 = 0
+5 = 0
+10 = 0
+15 = -1
+20 = 0
+
+logo, a árvore é AVL

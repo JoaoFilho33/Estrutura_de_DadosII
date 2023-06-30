@@ -1,0 +1,49 @@
+        20
+         \
+          30
+         /  \
+        25   40
+       /  \
+      23   28
+       \
+        21
+
+
+O algoritmo de Morris é um método para percorrer uma árvore binária sem usar pilhas ou recursão adicional. 
+Ele permite percorrer a árvore em tempo linear, ou seja, O(n), onde n é o número de nós na árvore.
+
+O algoritmo de Morris baseia-se na ideia de usar as referências dos ponteiros dos nós da árvore para obter um 
+percurso inorder sem a necessidade de armazenar nós extras na memória.
+
+
+Aqui está uma explicação passo a passo do algoritmo de Morris para percorrer uma árvore binária:
+
+Inicialize o nó atual como a raiz da árvore.
+Enquanto o nó atual não for nulo:
+a. Se o nó atual não tiver um filho esquerdo:
+Imprima o valor do nó atual.
+Avance para o próximo nó usando o ponteiro do filho direito.
+b. Se o nó atual tiver um filho esquerdo:
+Encontre o nó predecesssor do nó atual, ou seja, o nó mais à direita na subárvore esquerda do nó atual.
+Se o nó predecesssor não tiver um filho direito:
+Faça o filho direito do nó predecesssor apontar para o nó atual.
+Imprima o valor do nó atual.
+Avance para o próximo nó usando o ponteiro do filho esquerdo.
+Se o nó predecesssor tiver um filho direito que aponte para o nó atual:
+Restaure o filho direito do nó predecesssor como nulo.
+Avance para o próximo nó usando o ponteiro do filho direito.
+
+    O percurso inorder usando o algoritmo de Morris resultará na seguinte ordem de valores: 20, 21, 23, 25, 28, 30, 40.
+
+5.1
+    No algoritmo de Morris, apenas um resultado pode ser obtido durante o percurso da árvore. 
+    Isso ocorre porque o algoritmo segue uma abordagem determinística para percorrer a árvore em uma determinada ordem (no caso, o percurso inorder).
+    No exemplo fornecido, 
+        O resultado obtido com o algoritmo de Morris será: 20, 21, 23, 25, 28, 30, 40. 
+        Essa é a sequência de valores dos nós visitados durante o percurso inorder da árvore.
+5.2
+    A finalidade do algoritmo de Morris é realizar um percurso inorder de uma árvore binária sem utilizar estruturas de dados adicionais, como pilhas ou recursão.
+    Ele permite percorrer a árvore de forma eficiente, ocupando apenas uma constante de espaço adicional.
+
+    No entanto, é importante destacar que o algoritmo de Morris não tem como objetivo balancear a árvore. Sua finalidade é apenas realizar um percurso inorder 
+    eficiente, visitando todos os nós da árvore.
